@@ -1,0 +1,42 @@
+.navbar{
+  height:80px;
+  padding:0 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:100;
+}
+
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:700;
+}
+
+.logo span{
+  color:#4f8cff;
+}
+
+.nav-links{
+  display:flex;
+  gap:40px;
+}
+
+.nav-links a{
+  color:#cbd5e1;
+  text-decoration:none;
+}
+
+.login-btn{
+  padding:12px 24px;
+  border:none;
+  border-radius:12px;
+  background:#4f8cff;
+  color:white;
+  cursor:pointer;
+}
