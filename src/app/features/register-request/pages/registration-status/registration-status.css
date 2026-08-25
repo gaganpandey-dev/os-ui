@@ -1,202 +1,126 @@
 /* =========================================
-   REGISTRATION STATUS PAGE
+   REGISTRATION STATUS
    ========================================= */
 
 .status-page {
   min-height: 100vh;
-
-  display: grid;
-
-  grid-template-columns: 1fr 0.9fr;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
   background: #f8fafc;
-
   color: #111827;
 }
-
 
 /* =========================================
    MAIN CARD
    ========================================= */
 
 .status-card {
-  width: min(500px, 88%);
-
-  margin: auto;
-
-  padding: 42px;
-
+  width: min(520px, 100%);
+  padding: 38px;
+  background: #ffffff;
   border: 1px solid #e2e8f0;
-
-  border-radius: 26px;
-
-  background: rgba(255, 255, 255, 0.95);
-
-  box-shadow:
-    0 25px 70px rgba(15, 23, 42, 0.07);
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
 }
-
 
 /* =========================================
    BRAND
    ========================================= */
 
 .brand {
-  display: flex;
-  align-items: center;
-
-  gap: 12px;
-
-  margin-bottom: 45px;
-}
-
-.brand-icon {
-  width: 42px;
-  height: 42px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 12px;
-
-  background: #6366f1;
-
-  color: white;
-
-  font-size: 18px;
-  font-weight: 800;
+  margin-bottom: 30px;
 }
 
 .brand h3 {
   margin: 0;
-
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .brand span {
   display: block;
-
   margin-top: 3px;
-
   color: #94a3b8;
-
-  font-size: 10px;
+  font-size: 11px;
 }
-
 
 /* =========================================
    HEADING
    ========================================= */
 
 .status-heading {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .eyebrow {
+  margin: 0;
   color: #6366f1;
-
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
-
-  letter-spacing: 1.7px;
+  letter-spacing: 1.5px;
 }
 
 .status-heading h1 {
-  margin: 12px 0 15px;
-
-  font-size: clamp(38px, 5vw, 54px);
-
-  line-height: 1;
-
-  letter-spacing: -2px;
+  margin: 10px 0 12px;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
 }
 
 .status-heading h1 span {
-  display: block;
-
   color: #6366f1;
 }
 
 .status-heading p {
   margin: 0;
-
   color: #64748b;
-
   font-size: 14px;
-
-  line-height: 1.7;
+  line-height: 1.6;
 }
-
 
 /* =========================================
    FORM
    ========================================= */
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .form-group label {
   display: block;
-
-  margin-bottom: 8px;
-
+  margin-bottom: 7px;
   color: #334155;
-
   font-size: 12px;
   font-weight: 700;
 }
 
 .input-wrapper {
   position: relative;
-
-  display: flex;
-  align-items: center;
-}
-
-.input-icon {
-  position: absolute;
-
-  left: 14px;
-
-  color: #94a3b8;
-
-  font-size: 10px;
-  font-weight: 700;
-
-  pointer-events: none;
 }
 
 .input-wrapper input {
   width: 100%;
-
   box-sizing: border-box;
-
-  padding: 14px 14px 14px 48px;
-
-  border: 1px solid #e2e8f0;
-
-  border-radius: 11px;
-
+  padding: 13px 14px;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
   outline: none;
-
-  background: white;
-
+  background: #ffffff;
   color: #111827;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
 
-  font-size: 13px;
-
-  transition: 0.25s ease;
+.input-wrapper input::placeholder {
+  color: #94a3b8;
 }
 
 .input-wrapper input:focus {
   border-color: #818cf8;
-
-  box-shadow:
-    0 0 0 4px rgba(99, 102, 241, 0.08);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.08);
 }
-
 
 /* =========================================
    CHECK BUTTON
@@ -204,105 +128,68 @@
 
 .check-btn {
   width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10px;
-
-  padding: 14px;
-
+  margin-top: 4px;
+  padding: 13px 18px;
   border: none;
-
-  border-radius: 11px;
-
+  border-radius: 10px;
   background: #111827;
-
   color: white;
-
   font-size: 13px;
   font-weight: 700;
-
   cursor: pointer;
-
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
 .check-btn:hover {
   background: #4f46e5;
-
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 12px 25px rgba(79, 70, 229, 0.18);
+  transform: translateY(-1px);
 }
 
-
 /* =========================================
-   RESULT CARD
+   RESULT
    ========================================= */
 
 .result-card {
-  margin-top: 30px;
-
-  padding: 22px;
-
+  margin-top: 24px;
+  padding: 20px;
   border: 1px solid #dcfce7;
-
-  border-radius: 17px;
-
+  border-radius: 14px;
   background: #f0fdf4;
 }
-
-
-/* Result Header */
 
 .result-top {
   display: flex;
   align-items: center;
-
-  gap: 13px;
-
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
 .result-icon {
-  width: 40px;
-  height: 40px;
-
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-shrink: 0;
   border-radius: 50%;
-
   background: #dcfce7;
-
   color: #16a34a;
-
-  font-weight: 800;
+  font-size: 15px;
 }
 
 .result-label {
   display: block;
-
   color: #16a34a;
-
   font-size: 9px;
   font-weight: 800;
-
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
 }
 
 .result-top h2 {
   margin: 3px 0 0;
-
   color: #166534;
-
-  font-size: 22px;
+  font-size: 19px;
 }
-
 
 /* =========================================
    STUDENT INFO
@@ -310,329 +197,125 @@
 
 .student-info {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
-
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .info-item {
-  padding: 12px 10px;
-
-  border-radius: 10px;
-
-  background: white;
-
+  padding: 11px;
   border: 1px solid #dcfce7;
+  border-radius: 9px;
+  background: white;
 }
 
 .info-item span {
   display: block;
-
-  margin-bottom: 5px;
-
+  margin-bottom: 4px;
   color: #94a3b8;
-
-  font-size: 8px;
-
-  font-weight: 700;
+  font-size: 9px;
 }
 
 .info-item strong {
   display: block;
-
   color: #334155;
-
-  font-size: 10px;
-
-  word-break: break-word;
+  font-size: 11px;
 }
 
 .info-item .student-id {
   color: #4f46e5;
 }
 
-
 /* =========================================
    SUCCESS MESSAGE
    ========================================= */
 
 .success-message {
-  margin-bottom: 18px;
-
-  padding: 14px;
-
-  border-radius: 10px;
-
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 9px;
   background: white;
 }
 
 .success-message strong {
   display: block;
-
-  margin-bottom: 5px;
-
+  margin-bottom: 4px;
   color: #166534;
-
   font-size: 11px;
 }
 
 .success-message p {
   margin: 0;
-
   color: #64748b;
-
   font-size: 10px;
-
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-
 /* =========================================
-   CREATE PASSWORD BUTTON
+   CREATE PASSWORD
    ========================================= */
 
 .create-password-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  gap: 9px;
-
-  padding: 13px;
-
-  border-radius: 10px;
-
+  padding: 11px;
+  border-radius: 9px;
   background: #4f46e5;
-
   color: white;
-
   font-size: 11px;
   font-weight: 700;
-
   text-decoration: none;
-
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
 .create-password-btn:hover {
   background: #4338ca;
-
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
-
 
 /* =========================================
    FOOTER
    ========================================= */
 
 .status-footer {
-  margin-top: 25px;
-
+  margin-top: 22px;
   text-align: center;
-
   color: #94a3b8;
-
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .status-footer a {
   margin-left: 4px;
-
   color: #4f46e5;
-
   font-weight: 700;
-
   text-decoration: none;
 }
 
-
-/* =========================================
-   RIGHT VISUAL
-   ========================================= */
-
-.status-visual {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-
-  padding: 70px;
-
-  overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at 70% 25%,
-      rgba(99, 102, 241, 0.22),
-      transparent 30%
-    ),
-    #111827;
+.status-footer a:hover {
+  text-decoration: underline;
 }
-
-.status-visual::before {
-  content: "";
-
-  position: absolute;
-
-  width: 500px;
-  height: 500px;
-
-  top: -200px;
-  right: -180px;
-
-  border: 1px solid rgba(255, 255, 255, 0.07);
-
-  border-radius: 50%;
-}
-
-.visual-content {
-  position: relative;
-
-  z-index: 2;
-
-  max-width: 500px;
-}
-
-.visual-label {
-  color: #a5b4fc;
-
-  font-size: 10px;
-  font-weight: 800;
-
-  letter-spacing: 2px;
-}
-
-.visual-content h2 {
-  margin: 20px 0;
-
-  color: white;
-
-  font-size: clamp(45px, 5vw, 70px);
-
-  line-height: 0.98;
-
-  letter-spacing: -3px;
-}
-
-.visual-content h2 span {
-  display: block;
-
-  color: #818cf8;
-}
-
-.visual-content > p {
-  max-width: 420px;
-
-  color: #94a3b8;
-
-  font-size: 14px;
-
-  line-height: 1.8;
-}
-
-
-/* =========================================
-   JOURNEY
-   ========================================= */
-
-.journey {
-  margin-top: 45px;
-}
-
-.journey-step {
-  display: flex;
-  align-items: center;
-
-  gap: 15px;
-}
-
-.step-number {
-  width: 38px;
-  height: 38px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-shrink: 0;
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  border-radius: 10px;
-
-  color: #64748b;
-
-  font-size: 9px;
-  font-weight: 800;
-}
-
-.journey-step.active .step-number {
-  border-color: rgba(129, 140, 248, 0.4);
-
-  background: rgba(99, 102, 241, 0.15);
-
-  color: #a5b4fc;
-}
-
-.journey-step strong {
-  display: block;
-
-  color: #cbd5e1;
-
-  font-size: 11px;
-}
-
-.journey-step span {
-  display: block;
-
-  margin-top: 3px;
-
-  color: #64748b;
-
-  font-size: 9px;
-}
-
-.journey-line {
-  width: 1px;
-  height: 25px;
-
-  margin-left: 19px;
-
-  background: rgba(255, 255, 255, 0.1);
-}
-
 
 /* =========================================
    MOBILE
    ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 520px) {
 
   .status-page {
-    grid-template-columns: 1fr;
+    padding: 30px 16px;
   }
-
-  .status-visual {
-    display: none;
-  }
-
-  .status-card {
-    margin: 45px auto;
-  }
-
-}
-
-@media (max-width: 520px) {
 
   .status-card {
     padding: 28px 22px;
+    border-radius: 16px;
+  }
+
+  .status-heading h1 {
+    font-size: 32px;
   }
 
   .student-info {
     grid-template-columns: 1fr;
   }
-
 }

@@ -1,0 +1,172 @@
+.topbar {
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 30px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  background: #ffffff;
+}
+
+
+/* =========================
+   PAGE TITLE
+   ========================= */
+
+.page-title p {
+  margin: 0 0 5px;
+
+  color: #6366f1;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.page-title h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 21px;
+  font-weight: 750;
+}
+
+
+/* =========================
+   ACTIONS
+   ========================= */
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* =========================
+   ICON BUTTON
+   ========================= */
+
+.icon-btn {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+}
+
+
+/* Notification dot */
+
+.notification span {
+  position: absolute;
+
+  top: 7px;
+  right: 7px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #ef4444;
+
+  border: 2px solid white;
+}
+
+
+/* =========================
+   PROFILE
+   ========================= */
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding-left: 8px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.profile-info strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 12px;
+}
+
+.profile-info span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+
+  .topbar {
+    padding: 15px;
+  }
+
+  .profile-info {
+    display: none;
+  }
+
+  .page-title h1 {
+    font-size: 17px;
+  }
+
+}

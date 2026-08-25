@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-registration-status',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './registration-status.html',
   styleUrl: './registration-status.css',
 })
